@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+  <div id="main-container">
+    <main class="tip-container rounded p-5 shadow-lg">
+      <h1 class="text-center">Tip Calculator</h1>
+      <div>
+        <label for="bill" class="mt-2">Enter Bill Amount (in Rs) :</label>
+        <input type="number" style="width:100%;" id="bill" min="0" required>
+        <br>
+        <label class="mt-2" for="feedback">How was the Service ?</label>
+        <div class=" custom-control custom-switch">
+          <input type="radio" class="custom-control-input" name="feedback" value="1" id="customSwitch1">
+          <label class="custom-control-label" for="customSwitch1">Awesome</label>
+        </div>
+        <div class="custom-control custom-switch">
+          <input type="radio" class="custom-control-input" name="feedback" value="2" id="customSwitch2">
+          <label class="custom-control-label" for="customSwitch2">Good</label>
+        </div>
+        <div class="custom-control custom-switch">
+          <input type="radio" class="custom-control-input" name="feedback" value="3" id="customSwitch3">
+          <label class="custom-control-label" for="customSwitch3">Average</label>
+        </div>
+        <div class="custom-control custom-switch">
+          <input type="radio" class="custom-control-input" name="feedback" value="4" id="customSwitch4">
+          <label class="custom-control-label" for="customSwitch4">Poor</label>
+        </div>
+
+        <label for="bill" class="mt-2">Enter Number of People :</label>
+        <input type="number" style="width:100%;" id="people" required>
+
+        <div class="d-flex justify-content-center mt-2">
+        <button id="calculate" class="text-center mt-2">Calculate</button>
+        </div>
+      </div>
+          <p class="mt-2" id="final"></p>
+    </main>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
